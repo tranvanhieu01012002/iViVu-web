@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Khách sạn Phú Quốc</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="./css/PhuQuoc.css" />
+    <link rel="stylesheet" href="./css/Home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="menu-content">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm d-flex justify-content-between">
+          <!-- Brand/logo -->
+
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <img src="./Image/download.png" alt="" />
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./Detail.html"
+                >Khách sạn</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Vé máy bay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ăn uống</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                <i class="bi bi-three-dots"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Tài khoản đặt phòng</a>
+                <a class="dropdown-item" href="#">Cẩm nang du lịch </a>
+                <a class="dropdown-item" href="#">Giới thiệu</a>
+                <a class="dropdown-item" href="#">Hỏi đáp</a>
+                <a class="dropdown-item" href="#">Hỗ trợ</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link z-index"
+                id="navbardrop"
+                data-toggle="dropdown"
+                href="#"
+                ><i class="bi bi-person-circle"></i> Tài khoản</a
+              >
+              <div class="dropdown-menu small_menu">
+                <a
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  data-whatever="@getbootstrapp"
+                  href="#"
+                  >Đăng nhập</a
+                >
+                <a
+                  class="dropdown-item"
+                  data-toggle="modal"
+                  data-target="#exampleModal1"
+                  data-whatever="@getbootstrap"
+                  href="#"
+                  >Chưa có tài khoản? Đăng ký</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-telephone-fill"></i> 0917450572</a
+              >
+              <a
+                class="nav-link phone"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+                >Hà Nội-Hải Phòng
+              </a>
+              <div class="dropdown-menu small_menu">
+                <a class="dropdown-item" href="#"
+                  ><i class="bi bi-clock"></i> Hà Nội-Hải Phòng</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="bi bi-clock"></i> Hà Nội-Quảng Bình</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="bi bi-clock"></i> Hà Nội-Đà Nẵng</a
+                >
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="search">
+        <form>
+          <div class="row">
+            <div class="col-3">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Nhập tên thành phố bạn muốn"
+                />
+                <!-- <p id="number_of_hotel">12 hotel</p> -->
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="date" id="start_day" class="form-control" />
+                  </div>
+                  <div class="col-6">
+                    <input type="date" id="end_day" class="form-control" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <select class="custom-select">
+                <option selected>Số người</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-warning w-100">Tìm</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <br />
+      <div class="content">
+        <div class="first">
+          <div class="float-left">
+            <h3>Khách sạn Phú Quốc</h3>
+          </div>
+          <div>
+            <a href="#"> <i class="bi bi-geo-alt-fill"></i> Xem bản đồ ở đây</a>
+          </div>
+        </div>
+        <br />
+        <div class="main_content">
+          <div class="row">
+            <div class="col-3">
+              <form>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="float-left">
+                      <img
+                        src="./Image/anh-chan-dung-con-gai-toc-ngan_082837328.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <h5>Cần hỗ trợ?</h5>
+                      <ul class="list-group">
+                        <li class="list-group-item">
+                          HCM <span>0192312312</span>
+                        </li>
+                        <li class="list-group-item">
+                          HN <span> 0434342342</span>
+                        </li>
+                        <li class="list-group-item">
+                          CT <span>5453452423</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="card">
+                  <div class="card-header">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inlineFormInputGroup"
+                        placeholder="Tìm khách sạn"
+                      />
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <a href="#"><i class="bi bi-search"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <p class="font-weight-bold">Hạng sao</p>
+                    <div class="form-group">
+                      <div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck1"
+                          />
+                          <label class="form-check-label" for="gridCheck1">
+                            <i class="bi bi-star-fill"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck2"
+                          />
+                          <label class="form-check-label" for="gridCheck2">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck3"
+                          />
+                          <label class="form-check-label" for="gridCheck3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck4"
+                          />
+                          <label class="form-check-label" for="gridCheck4">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck5"
+                          />
+                          <label class="form-check-label" for="gridCheck5">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                          </label>
+                        </div>
+                      </div>
+                      <hr />
+                    </div>
+                    <div class="form-group">
+                      <p class="font-weight-bold">Khu vực</p>
+                      <div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area1"
+                          />
+                          <label class="form-check-label" for="area1">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area2"
+                          />
+                          <label class="form-check-label" for="area2">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area3"
+                          />
+                          <label class="form-check-label" for="area3">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area4"
+                          />
+                          <label class="form-check-label" for="area4">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area5"
+                          />
+                          <label class="form-check-label" for="area5">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="area6"
+                          />
+                          <label class="form-check-label" for="area6">
+                            Bãi Khem
+                          </label>
+                        </div>
+                        <!-- sdfsdf -->
+                        <div class="collapse" id="collapseExample">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="area7"
+                            />
+                            <label class="form-check-label" for="area7">
+                              Bãi Khem
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="area7"
+                            />
+                            <label class="form-check-label" for="area7">
+                              Bãi Khem
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="area8"
+                            />
+                            <label class="form-check-label" for="area8">
+                              Bãi Khem
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="area9"
+                            />
+                            <label class="form-check-label" for="area9">
+                              Bãi Khem
+                            </label>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#collapseExample"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                        >
+                          <i class="bi bi-chevron-compact-down"></i> Xem thêm
+                        </button>
+                        <br />
+                        <hr />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <p class="font-weight-bold">Loại hình nơi ở</p>
+                      <div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay1"
+                          />
+                          <label class="form-check-label" for="type_stay1">
+                            Dorm
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay1"
+                          />
+                          <label class="form-check-label" for="type_stay1">
+                            Khu nghỉ dưỡng (Resort)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay2"
+                          />
+                          <label class="form-check-label" for="type_stay2">
+                            Biệt thư (Villa)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay3"
+                          />
+                          <label class="form-check-label" for="type_stay3">
+                            Khách sạn (Hotel)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay4"
+                          />
+                          <label class="form-check-label" for="type_stay4">
+                            Căn hộ (Apartment)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="type_stay5"
+                          />
+                          <label class="form-check-label" for="type_stay5">
+                            Du thuyền (Cruise)
+                          </label>
+                        </div>
+                        <div class="collapse" id="type_stay">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="type_stay6"
+                            />
+                            <label class="form-check-label" for="type_stay6">
+                              Kiến trúc bản địa
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="type_stay6"
+                            />
+                            <label class="form-check-label" for="type_stay6">
+                              Kiến trúc bản địa
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="type_stay6"
+                            />
+                            <label class="form-check-label" for="type_stay6">
+                              Kiến trúc bản địa
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="type_stay6"
+                            />
+                            <label class="form-check-label" for="type_stay6">
+                              Kiến trúc bản địa
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="type_stay6"
+                            />
+                            <label class="form-check-label" for="type_stay6">
+                              Kiến trúc bản địa
+                            </label>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#type_stay"
+                          aria-expanded="false"
+                          aria-controls="type_stay"
+                        >
+                          <i class="bi bi-chevron-compact-down"></i> Xem thêm
+                        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <p class="font-weight-bold">Tiện ích</p>
+                      <div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="Utilities1"
+                          />
+                          <label class="form-check-label" for="Utilities1">
+                            Phòng gia đình
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="Utilities2"
+                          />
+                          <label class="form-check-label" for="Utilities2">
+                            Bãi biển riêng
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="Utilities3"
+                          />
+                          <label class="form-check-label" for="Utilities3">
+                            Bãi đậu xe ô tô
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="Utilities4"
+                          />
+                          <label class="form-check-label" for="Utilities4">
+                            Hồ bơi
+                          </label>
+                        </div>
+                        <div class="collapse" id="utilities">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Utilities5"
+                            />
+                            <label class="form-check-label" for="Utilities5">
+                              Khu vui chơi trẻ em
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="Utilities6"
+                            />
+                            <label class="form-check-label" for="Utilities6">
+                              Dịch vụ trọn gói
+                            </label>
+                          </div>
+                        </div>
+                        <button
+                          class="btn btn-outline-primary"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#utilities"
+                          aria-expanded="false"
+                          aria-controls="utilities"
+                        >
+                          <i class="bi bi-chevron-compact-down"></i> Xem thêm
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="card">
+                  <div class="card-header">
+                    <span class="font-weight-bold"
+                      >Kinh nghiệm khi đi du lịch Phú Quốc</span
+                    >
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Là hòn đảo lớn nhất Việt Nam, Phú Quốc sở hữu những bãi
+                      biển trong vắt, những dòng suối yên bình cùng khu rừng
+                      nguyên sinh rộng lớn.
+                    </p>
+                    <p>
+                      Nhắc tới Phú Quốc, không thể không nhắc tới bãi Sao, bãi
+                      Dài, đặc sản hồ tiêu, nước mắm, rượu sim hay ngọc trai...
+                      Còn nữa, Phú Quốc còn nhiều ẩn số đang chờ bạn khám phá
+                      đó, đừng bỏ lỡ!
+                    </p>
+                    <p><a href="#">Xem thêm!</a></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-9">
+              <div class="search_content"></div>
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>
+                          <a href="./Detail.html"
+                            >JW Marrious Phú Quốc Emerail Bay Resort &...</a
+                          >
+                        </h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div class="hotel_banner">
+                <div class="alert alert-warning" role="alert">
+                  <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc |
+                  3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                  7,999,000VNĐ/Khách
+                </div>
+                <div class="descriptionn">
+                  <div class="row">
+                    <div class="col-9">
+                      <div class="image_for_ad">
+                        <img
+                          src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                          alt=""
+                        />
+                        <div class="content_img">
+                          <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                        </div>
+                      </div>
+                      <div class="back_ground_white">
+                        <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                        <span>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <span><i class="bi bi-heart-fill"></i></span>
+                          <span>9.7</span> Tuyệt vời | Đánh giá</span
+                        >
+                        <br />
+                        <a href="#">
+                          <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                          Thới -
+                          <span class="font-weight-bold">Xem bản đồ</span></a
+                        >
+                        <div class="row">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Châu Âu
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Chụp ảnh đẹp
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                          </button>
+                        </div>
+                        <i class="bi bi-star-fill"></i>
+                        Thiết kế độc đáo Bãi biển riêng cát trắng
+                        <span class="font-weight-bold">+2</span>
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <h5>Ưu đãi bí mật</h5>
+                      <button type="button" class="btn btn-secondary">
+                        Phòng, 1 giường... <br />
+                        Gồm ăn sáng
+                      </button>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" id="more_hotel">
+                <br />
+                <div class="hotel_banner">
+                  <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc
+                    | 3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                    7,999,000VNĐ/Khách
+                  </div>
+                  <div class="descriptionn">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="image_for_ad">
+                          <img
+                            src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                            alt=""
+                          />
+                          <div class="content_img">
+                            <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                          </div>
+                        </div>
+                        <div class="back_ground_white">
+                          <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                          <span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span><i class="bi bi-heart-fill"></i></span>
+                            <span>9.7</span> Tuyệt vời | Đánh giá</span
+                          >
+                          <br />
+                          <a href="#">
+                            <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                            Thới -
+                            <span class="font-weight-bold">Xem bản đồ</span></a
+                          >
+                          <div class="row">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Châu Âu
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Chụp ảnh đẹp
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                            </button>
+                          </div>
+                          <i class="bi bi-star-fill"></i>
+                          Thiết kế độc đáo Bãi biển riêng cát trắng
+                          <span class="font-weight-bold">+2</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <h5>Ưu đãi bí mật</h5>
+                        <button type="button" class="btn btn-secondary">
+                          Phòng, 1 giường... <br />
+                          Gồm ăn sáng
+                        </button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="hotel_banner">
+                  <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc
+                    | 3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                    7,999,000VNĐ/Khách
+                  </div>
+                  <div class="descriptionn">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="image_for_ad">
+                          <img
+                            src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                            alt=""
+                          />
+                          <div class="content_img">
+                            <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                          </div>
+                        </div>
+                        <div class="back_ground_white">
+                          <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                          <span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span><i class="bi bi-heart-fill"></i></span>
+                            <span>9.7</span> Tuyệt vời | Đánh giá</span
+                          >
+                          <br />
+                          <a href="#">
+                            <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                            Thới -
+                            <span class="font-weight-bold">Xem bản đồ</span></a
+                          >
+                          <div class="row">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Châu Âu
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Chụp ảnh đẹp
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                            </button>
+                          </div>
+                          <i class="bi bi-star-fill"></i>
+                          Thiết kế độc đáo Bãi biển riêng cát trắng
+                          <span class="font-weight-bold">+2</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <h5>Ưu đãi bí mật</h5>
+                        <button type="button" class="btn btn-secondary">
+                          Phòng, 1 giường... <br />
+                          Gồm ăn sáng
+                        </button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <div class="hotel_banner">
+                  <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-clock"></i> Còn 63 ngày | Kiệt tác đảo ngọc
+                    | 3N2Đ + Vé Máy bay + Đón tiễn + Voucher 1tr1 từ
+                    7,999,000VNĐ/Khách
+                  </div>
+                  <div class="descriptionn">
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="image_for_ad">
+                          <img
+                            src="./Image/jw-marriott-phu-quoc-emerald-bay-resort--800x450.png"
+                            alt=""
+                          />
+                          <div class="content_img">
+                            <p>3N2Đ +VMB+ VOUCHER|7,499 TRIỆU/KHÁCH</p>
+                          </div>
+                        </div>
+                        <div class="back_ground_white">
+                          <h6>JW Marrious Phú Quốc Emerail Bay Resort &...</h6>
+                          <span>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <span><i class="bi bi-heart-fill"></i></span>
+                            <span>9.7</span> Tuyệt vời | Đánh giá</span
+                          >
+                          <br />
+                          <a href="#">
+                            <i class="bi bi-geo-alt-fill"></i> Bãi Khem, xã An
+                            Thới -
+                            <span class="font-weight-bold">Xem bản đồ</span></a
+                          >
+                          <div class="row">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Châu Âu
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Chụp ảnh đẹp
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="bi bi-check"></i> Thương hiệu Quốc tế
+                            </button>
+                          </div>
+                          <i class="bi bi-star-fill"></i>
+                          Thiết kế độc đáo Bãi biển riêng cát trắng
+                          <span class="font-weight-bold">+2</span>
+                        </div>
+                      </div>
+                      <div class="col-3">
+                        <h5>Ưu đãi bí mật</h5>
+                        <button type="button" class="btn btn-secondary">
+                          Phòng, 1 giường... <br />
+                          Gồm ăn sáng
+                        </button>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary w-75"
+                  data-toggle="collapse"
+                  data-target="#more_hotel"
+                  aria-expanded="false"
+                  aria-controls="more_hotel"
+                >
+                  xem thêm các khách sạn khác
+                </button>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div>
+            <div class="card">
+              <div class="card-header d-flex justify-content-lg-between">
+                <div class="left_content d-flex align-items-center">
+                  <div class="row">
+                    <h6>Khách sạn Phú Quốc</h6>
+                    <button type="button" class="btn btn-primary">
+                      <i class="bi bi-facebook"></i> Lượt thích
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      <i class="bi bi-facebook"></i> Lượt chia sẻ
+                    </button>
+                  </div>
+                </div>
+                <div class="right_content">
+                  <div class="vote">
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                    <i class="bi bi-star"></i>
+                  </div>
+                  <div class="comment">
+                    <span>3.0/5 trên 706 đánh giá</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  Cách đây ít năm, các
+                  <span class="font-weight-bold">khách sạn Phú Quốc</span> vẫn
+                  còn rất ít và du lịch chưa phát triển mạnh mẽ. Nhưng, với vị
+                  thế là hòn đảo lớn nhất Việt Nam, Phú Quốc đang dần lột xác
+                  trở thành một thiên đường nghỉ dưỡng với rất nhiều dịch vụ lưu
+                  trú từ homestay, nhà nghỉ bình dân, khách sạn, khu nghỉ dưỡng
+                  cao cấp, biệt thự hạng sang… Do vị trí đặc biệt nằm trong vịnh
+                  Thái Lan và sở hữu vô số bãi biển trải dài ôm trọn đảo nên Phú
+                  Quốc thích hợp cho việc du lịch khám phá lẫn nghỉ dưỡng vào
+                  bất cứ thời gian nào trong năm.
+                </p>
+                <p>
+                  Đa phần các khu nghỉ dưỡng nằm dọc
+                  <a href="#">bãi Trường</a>,<a href="#"> bãi Dài</a>,
+                  <a href="#">bãi Ông Lang</a>, bãi Sao, bãi Khem… nhưng tập
+                  trung nhiều nhất vẫn là các khách sạn trên đường Trần Hưng Đạo
+                  hướng vào thị trấn Dương Đông với mức giá vừa phải. Nếu yêu
+                  thích sự sôi động, bạn có thể chọn
+                  <span class="font-weight-bold">khách sạn Phú Quốc</span> gần
+                  chợ đêm Dinh Cậu nha.
+                </p>
+                <p>
+                  iVIVU.com sẽ giúp bạn tìm được
+                  <a href="#"> khách sạn Phú Quốc</a> chất lượng tốt với mức giá
+                  thấp nhất thị trường, những combo trọn gói bao gồm cả vé máy
+                  bay khứ hồi. Bạn sẽ không phải mất nhiều thời gian tìm kiếm
+                  hay so sánh mà vẫn có được một chuyến đi đáng tiền.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="rank">
+            <div class="alert alert-dark" role="alert">
+              <div>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#rank_star"
+                  aria-expanded="false"
+                  aria-controls="rank_star"
+                >
+                  <span class="font-weight-bold"
+                    ><i class="bi bi-chevron-compact-down"></i> Khách sạn Phú
+                    Quốc theo hạng sao</span
+                  >
+                </button>
+              </div>
+              <div class="collapse w-100" id="rank_star">
+                <div class="card card-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn 1 sao tại Phú Quốc</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn 2 sao tại Phú Quốc</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn 3 sao tại Phú Quốc</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn 4 sao tại Phú Quốc</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn 5 sao tại Phú Quốc</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-dark" role="alert">
+              <div>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#popular_place"
+                  aria-expanded="false"
+                  aria-controls="popular_place"
+                >
+                  <span class="font-weight-bold"
+                    ><i class="bi bi-chevron-compact-down"></i> Khách sạn Phú
+                    Quốc tại các địa điểm phổ biến</span
+                  >
+                </button>
+              </div>
+              <div class="collapse w-100" id="popular_place">
+                <div class="card card-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bãi biển Cửa Cạn</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bãi biển Cửa Lấp </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bãi biển Dương Đông</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bãi biển Ông Lang</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bài Dài</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khem</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bài Sao</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bài Trường</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Gần chợ đêm Dinh Cậu</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Gành Dầu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-dark" role="alert">
+              <div>
+                <button
+                  class="btn btn-outline-primary w-100"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#other_place"
+                  aria-expanded="false"
+                  aria-controls="other_place"
+                >
+                  <span class="font-weight-bold"
+                    ><i class="bi bi-chevron-compact-down"></i> Khách sạn tại
+                    các địa điểm du lich nổi tiếng khác</span
+                  >
+                </button>
+              </div>
+              <div class="collapse w-100" id="other_place">
+                <div class="card card-body">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Quảng Ninh</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Dak Nông </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Bãi biển Dương Đông</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Ninh Thuận</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khác sạn Sơn La</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Kon Tum</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Bà Rịa - Vũng Tàu</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Quảng Trị</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Hà Nam</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Quảng Bình</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Cao Bằng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Bình Thuận</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Gia Lai</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                      <a href="#">Khách sạn Sóc Trăng</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-of-content">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./Home_Page.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="#">Việt Nam</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <a href="#">Phú Quốc</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+          <div class="row">
+            <div class="col-3">
+              <h4>Về iViVU.com</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Chúng tôi</li>
+                <li class="list-group-item">iViVu blog</li>
+                <li class="list-group-item">PMS - Miễn phí</li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <h4>Thông tin</h4>
+              <ul class="list-group list-group-flush">
+              <li class="list-group-item">Điều kiện&Điều khoản</li>
+              <li class="list-group-item">Quy chế hoạt động</li>
+              <li class="list-group-item">Câu hỏi thường gặp</li>
+            </ul>
+            </div>
+            <div class="col-3">
+            <h4>Đối tác</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Quy chế bảo hiểm</li>
+              <li class="list-group-item">Yêu cầu bồi thường</li>
+              <li class="list-group-item">Quy chế trả góp</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h4>Chứng nhận</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><img src="./Image/1588040806021-1(25).jpg" alt=""></li>
+            </ul>
+          </div>
+          </div>
+          </div>
+          <div class="col-4">
+          <div class="row d-flex justify-content-center">
+            <img src="./Image/download (2).png" alt="" class="col-3"> 
+            <img src="./Image/Victoria.png" alt="" class="col-3">
+            <p>Một thành viên của <span>Thiên Minh Group</span></p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-8">
+              <div class="row">
+                <div class="col-12">
+                  <img src="./Image/download (1).png" alt="" id="icon1">   
+                <h6 class="font-weight-bold">iVIVU.com @ 2021- Đại lý Du lịch trực tuyến hàng đầu Việt Nam</h6>
+                </div>
+                <div class="col-12">
+                  <img src="./Image/download (1).png" alt="" id="icon1">   
+                <hh6 class="font-weight-bold">Best company to Work for in Asian</h6>
+                </div>
+                <div class="col-12 address">
+                  <p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+                  <p><i class="bi bi-geo-alt-fill"></i><span class="font-weight-bold">HCM:</span>Lầu 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, Tp. Hồ Chí Minh( <a href="https://www.google.com/maps/place/STS+Tower/@10.0325865,105.7813935,17z/data=!3m1!4b1!4m5!3m4!1s0x31a062a021d30f53:0x9b0f01147ded98ff!8m2!3d10.0325612!4d105.7835784">Xem bản đồ</a> )</p>
+                  <p><i class="bi bi-geo-alt-fill"></i><span class="font-weight-bold">HN:</span>Tầng 1, lầu nhà Ladeco, 266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, Hà Nội ( <a href="https://www.google.com/maps/place/To%C3%A0+nh%C3%A0+LADECO/@21.0362471,105.8137158,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xde7c4fb8e272fabc!8m2!3d21.0363109!4d105.8159218">Xem bản đồ</a> ) </p>
+                  <p><i class="bi bi-geo-alt-fill"></i><span class="font-weight-bold">Cần Thơ:</span>Tần 7 - Tòa STS -11B Đại lộ hòa bình, P. Tân AN, Q. Ninh Kiều, TP Cần Thơ ( <a href="">Xem bản đồ</a> )</p>
+                </div>
+                <div class="col-12 contact">
+                  <p>Like để cập nhật nhiều cẩm nang du lịch</p>
+                  <div class="icon_social_media">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-envelope"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-4">
+            <h6 class="font-weight-bold">Bạn cần giúp? Hãy gọi ngay</h6>
+            <h3><span><i class="bi bi-telephone"></i> 0917459572</span></h3>
+            <div class="form-inline">
+              <label for="sel1">Doanh sách chọn:</label>
+              <select class="form-control inline" id="sel1">
+                <option>Hà Nội - Hải Phòng</option>
+                <option>Hà Nội - Quảng Bình</option>
+                <option>Hà Nội - Đà Nẵng</option>
+              </select>
+            </div>
+            <p><span><i class="bi bi-messenger"></i>Tư vấn với Oliva</span></p>
+            <h6>Đặt phòng dễ dàng hơn qua ứng dụng iVIVU</h6>
+            <div class="dowload">
+              <img src="./Image/Capture.PNG" alt="">
+              <div class="footer-block information">
+                <div class="social">
+                    <a href="#"> <img src="./Image/google-play-badge.png" /></a>
+                    <a href="#"> <img src="./Image/640px-Download_on_the_App_Store_Badge.svg.png"/></a>
+
+                </div>            
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

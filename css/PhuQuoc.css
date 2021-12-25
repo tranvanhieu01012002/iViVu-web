@@ -1,0 +1,59 @@
+.search {
+  padding: 20px 5px 10px 5px;
+  background-color: rgb(156, 140, 140);
+  opacity: 0.7;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.first a {
+  padding-left: 5px;
+}
+.card-body img {
+  border-radius: 50%;
+  width: 60px;
+  height: 65px;
+}
+.card .list-group-item {
+  padding: 2px;
+  margin-left: 2px;
+}
+.form-check-input:checked ~ .form-check-label {
+  color: rgb(105, 105, 10);
+}
+.card-body a:hover {
+  text-decoration: none;
+}
+.hotel_banner {
+  background-color: #fff3cd;
+  border-radius: 10px;
+}
+.descriptionn .btn {
+  padding: 0px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+.image_for_ad img {
+  max-width: 250px;
+}
+.image_for_ad {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 5px;
+}
+.content_img {
+  position: absolute;
+  top: 10%;
+  background-color: rgb(221, 36, 36);
+  padding: 5px 10px 0px 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.content_img p {
+  margin-bottom: 5px;
+}
+.left_content .btn {
+  padding: 0px;
+  margin-left: 20px;
+}

@@ -1,0 +1,137 @@
+.nav-right {
+  padding: 40px;
+}
+.bi-search {
+  padding: 30px;
+  font-size: 30px;
+}
+.nav-right .nav-item:first-child {
+  margin-top: 40px;
+}
+.list-group-item img {
+  width: 60px;
+  padding-right: 5px;
+  padding-bottom: 50px;
+  float: left;
+}
+.list-group-item span {
+  color: rgb(44, 44, 7);
+  font-weight: bold;
+}
+#carouselExampleControls {
+  position: relative;
+}
+.content_img {
+  position: absolute;
+  top: 10%;
+  background-color: rgb(221, 36, 36);
+  padding: 10px 20px;
+}
+.room {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: rgb(141, 78, 78);
+  color: #fff;
+}
+.room a {
+  color: #fff;
+  padding: 20px;
+}
+.treval {
+  background-color: sandybrown;
+}
+.flex-row img {
+  width: 100px;
+}
+.flex-row {
+  background-color: rgb(80, 86, 104);
+  border-radius: 10px;
+}
+.treval .col {
+  border: 1px solid black;
+}
+.treval {
+  border-radius: 10px;
+}
+.payment {
+  padding: 20px 2px 10px 20px;
+  background-color: chartreuse;
+  border-left: 3px solid red;
+}
+.col-md-9 .btn-outline-primary {
+  margin-right: 20px;
+}
+.col-2 p {
+  border: 1px solid blue;
+}
+.col-3 .btn-outline-primary {
+  border: 1.5px dotted blue;
+}
+.red {
+  color: red;
+}
+.table h6 {
+  color: rgb(21, 68, 223);
+}
+.menu_item {
+  font-size: 14px;
+}
+.feature li {
+  list-style-type: none;
+}
+.feature ul li::before {
+  content: "\2022";
+  color: rgb(21, 68, 223);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 20px;
+}
+.role .row {
+  border-bottom: 0.5px solid rgb(75, 75, 82);
+}
+.btn-success {
+  margin-right: 10px;
+}
+.vote_image img {
+  width: 10vw;
+}
+.point {
+  padding: 5px;
+  background-color: chartreuse;
+  border-radius: 10px;
+}
+.bi-person-fill {
+  float: left;
+}
+.border_top {
+  border-top: 1px solid rgb(29, 29, 23);
+  padding-top: 10px;
+}
+.vote_image {
+  padding: 10px 0px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: rgb(8, 13, 15);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .treval .col-7 {
+    width: 100%;
+    display: block;
+  }
+  .treval {
+    width: 100%;
+  }
+  .place {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .table {
+    display: none;
+  }
+}
